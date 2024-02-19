@@ -1,0 +1,123 @@
+/* chatbox.css */
+
+/* Styles for the container */
+.chat-container {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the chat box */
+.chat-box {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the heading */
+.chat-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 10px;
+}
+
+/* Styles for the subheading */
+.chat-subheading {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Styles for the chat history */
+.chat-history {
+  height: 400px;
+  overflow: auto;
+}
+
+/* Styles for the user message */
+.user-message-container {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Styles for the assistant message */
+.assistant-message-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* Styles for the message bubble */
+.message-bubble {
+  max-width: 22rem;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Styles for user message bubble */
+.user-message-bubble {
+  background-color: #a0c3ff;
+  color: #1a365d;
+}
+
+/* Styles for assistant message bubble */
+.assistant-message-bubble {
+  background-color: #9fdfbf;
+  color: #22543d;
+}
+
+/* Styles for the input and button */
+.input-button-container {
+  display: flex;
+}
+
+/* Styles for the input */
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Styles for the button */
+.button {
+  background-color: #4299e1;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Hover styles for the button */
+.button:hover {
+  background-color: #3182ce;
+}
+
+/* Styles for the loading animation */
+.loading {
+  background-color: #4299e1;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Keyframe animation for the loading animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
